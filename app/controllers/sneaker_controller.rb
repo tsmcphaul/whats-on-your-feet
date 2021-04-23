@@ -20,13 +20,17 @@ class SneakerController < ApplicationController
    end
 
    get '/collection/:id' do
-      @sneaker = Sneaker.find(params[:id])
-      erb :'/collection/show'
+      if current_user
+         @sneaker = Sneaker.find(params[:id])
+         erb :'/collection/show'
+      else
+         redirect to '/failure'
+      end
    end
 
    get '/collection/:id/edit' do
-      @sneaker = Sneaker.find_by_id(params[:id])
-      erb :'/collection/edit'
+         @sneaker = Sneaker.find_by_id(params[:id])
+         erb :'/collection/edit'
    end
 
    patch '/collection/:id' do
