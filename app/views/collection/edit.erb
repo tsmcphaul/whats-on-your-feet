@@ -1,0 +1,22 @@
+<html>
+    <h1>Update your kicks</h1>
+    <form action="/collection/<%=@sneaker.id%>" method="post">
+        <input id="hidden" type="hidden" name="_method" value="patch">
+
+        <label>Brand:</label>
+        <input type="text" id="brand" name="brand" placeholder="<%=@sneaker.brand%>" >
+
+        <label>Name:</label>
+        <input type="text" id="name" name="name" placeholder="<%=@sneaker.name%>">
+
+        <label>Colorway:</label>
+        <input type="text" id="colorway" name="colorway" placeholder="<%=@sneaker.colorway%>">
+
+        <label>Purchase Date:</label>
+        <input type="text" id="purchase_date" name="purchase_date" placeholder="<%=@sneaker.purchase_date%>">
+
+        <label>Price: $</label>
+        <input type="text" id="price" name="price" placeholder="<%=@sneaker.price%>">
+        <input type="submit" name="submit" value="Update">
+    </form>
+</html>

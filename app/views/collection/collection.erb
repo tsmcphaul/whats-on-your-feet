@@ -1,0 +1,18 @@
+<h1>My Sneaker Collection</h2>
+
+<% @sneakers.each do |shoe| %>
+<%= shoe.brand + " " + shoe.name %>
+  <form action="/collection/<%=shoe.id%>">
+        <input type="submit" value="Open">
+    </form>
+<%end%>
+
+
+
+<form action="/collection/new">
+    <input type="submit" name="submit" value="Add New Kicks" id="submit">
+</form>
+
+<form action="/logout">
+    <input type="submit" name="submit" value="Log Out" id="submit">
+</form>

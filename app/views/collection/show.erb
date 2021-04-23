@@ -1,0 +1,21 @@
+<html>
+    <h1><%=@sneaker.brand%></h1>
+    <h1><%=@sneaker.name%></h1>
+    <h2><%=@sneaker.colorway%></h2>
+    <h2><%=@sneaker.purchase_date%></h2>
+    <h2>$<%=@sneaker.price%></h2>
+
+    <form action="/collection/<%=@sneaker.id%>/edit">
+        <input type="submit" value="Edit">
+    </form>
+
+
+    <form action="/collection/<%=@sneaker.id%>" method="post">
+        <input id="hidden" type="hidden" name="_method" value="delete">
+        <input type="submit" value="Delete">
+    </form>
+
+      <form action='/collection'>
+        <input type="submit" value="Go Back To Your Kicks">
+    </form>
+</html>
