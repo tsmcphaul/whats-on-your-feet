@@ -1,13 +1,10 @@
-<h1>My Sneaker Collection</h2>
-<%if current_user%>
+<h1><%=current_user.username%>'s Sneaker Collection</h2>
+<%# <%@sneakers = Sneaker.all.where({user_id: params[:user_id]})%>
 <% @sneakers.each do |shoe| %>
 <%= shoe.brand + " " + shoe.name %>
   <form action="/collection/<%=shoe.id%>">
         <input type="submit" value="Open">
     </form>
-    <%end%>
-<%else%>
-<% redirect to '/failure'%>
 <%end%>
 
 
