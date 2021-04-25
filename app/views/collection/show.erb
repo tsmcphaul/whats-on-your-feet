@@ -1,22 +1,53 @@
-<html>
-  
-    <h1><%=@sneaker.brand%></h1>
-    <h1><%=@sneaker.name%></h1>
-    <h2><%=@sneaker.colorway%></h2>
-    <h2><%=@sneaker.purchase_date%></h2>
-    <h2>$<%=@sneaker.price%></h2>
+<!DOCTYPE html>
+ <html> 
+  <head>
+    <title>WhatsOnYourFeet</title>
+    <style>
+      h1,h2{
+          font-size: 36px;
+          text-align: center;
+          color: #FFFFFF;
+          border-bottom-style: solid;
+          border-color: #FFFFFF;
+      }
+
+      .form {
+        background-color: #000000;
+        border-radius: 25px;
+        }
+
+       form {
+        text-align: center;
+        color: #FFFFFF;
+        }
+        img{
+          width: 30%;
+          padding-left: 30px;
+        }
+    </style>
+    <div class="form">
+    <h1>Brand: <%=@sneaker.brand%></h1>
+    <h1>Name: <%=@sneaker.name%></h1>
+    <h2>Colorway: <%=@sneaker.colorway%></h2>
+    <h2>Purchase Date: <%=@sneaker.purchase_date%></h2>
+    <h2>Price: $<%=@sneaker.price%></h2>
 
     <form action="/collection/<%=@sneaker.id%>/edit">
         <input type="submit" value="Edit">
     </form>
 
-
+    <br>
     <form action="/collection/<%=@sneaker.id%>" method="post">
         <input id="hidden" type="hidden" name="_method" value="delete">
         <input type="submit" value="Delete">
     </form>
-
+    <br>
       <form action='/collection'>
         <input type="submit" value="Go Back To Your Kicks">
     </form>
+    </div>
+
+    <img src="https://media.giphy.com/media/3o7TKA9qD3bBwK6VYA/giphy.gif">
+    <img src="https://media.giphy.com/media/3o7TKA9qD3bBwK6VYA/giphy.gif">
+    <img src="https://media.giphy.com/media/3o7TKA9qD3bBwK6VYA/giphy.gif">
 </html>
