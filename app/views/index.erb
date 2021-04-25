@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+ <html class="no-js" lang="en"> 
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
@@ -11,28 +8,68 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/stylesheets/main.css" />
+    <%# <link rel="stylesheet" href="/stylesheets/main.css"/> %>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <style>
+
+      header {
+          width: 100%;
+          height: 300px;
+          background-size: cover;
+          background-image: url("https://www.wallpapertip.com/wmimgs/7-78709_sneakers-pile-of-nike-shoes.jpg");
+          background-repeat:no-repeat;  
+          border-radius: 25px;        
+        }
+
+      h1 {
+          font-size: 36px;
+          text-align: center;
+        }
+
+      h2 {
+          font-size: 24px;
+          text-align: center;
+        }
+
+      form {
+        text-align: center;
+      }
+
+      .body{
+        background-color: #66CDAA;
+        border-radius: 25px
+      }
+
+    </style>
+
   </head>
+
   <body>
     <header>
-      <div> 
-      <img src="https://www.wallpapertip.com/wmimgs/7-78709_sneakers-pile-of-nike-shoes.jpg" class="header-img">
-      </div>
-      
-    
 
+    </header>
+   <div class="body">  
+   <br> 
     <h1>What's On Your Feet?</h1>
-    <h2>Calling all Sneakerheads</h2>
+    <h2>Calling all Sneakerheads!</h2>
     <h2>Create your sneaker collection</h2>
 
-    <a href="/signup">Sign Up</a>
-    <a href="/login">Log In</a>
-
+    <p>
+      <form action="/signup">
+        <input type="submit" name="submit" value="Sign Up!" id="submit">
+      </form>
+<br>
+<br>
+      <form action="/login">
+        <input type="submit" name="submit" value="Log In" id="submit">
+      </form>
+    </p>
+<br>
+   
+</div>
+<br>
     
-</header>
-      
-      
       <footer class="branding">
         <small>&copy; 2021 <strong>WhatsOnYourFeet</strong></small>
       </footer>
