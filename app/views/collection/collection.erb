@@ -28,7 +28,6 @@
     </style>
 <div class="collection">
 <h1><%=current_user.username%>'s Sneaker Collection</h1>
-<%# <%@sneakers = Sneaker.all.where({user_id: params[:user_id]})%>
 <% @sneakers.each do |shoe| %>
 <p><b><u><%=  shoe.brand + " " + shoe.name %></p></b></u>
   <form action="/collection/<%=shoe.id%>">

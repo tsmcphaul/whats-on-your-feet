@@ -6,4 +6,4 @@ Installation
 - Make sure to be inside the application's directory 
 - Run 'bundle install' to install all required gems to run application
 - Run 'shotgun' and open a localhost server in browser (localhost:9393) 
-- Create a profile, log in, and create a snearker collection
+- Create a profile, log in, and create a sneaker collection
