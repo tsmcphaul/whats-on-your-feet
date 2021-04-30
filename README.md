@@ -1,4 +1,4 @@
-What's On Your Feet is a Sinatra Web Application that allows fellow Sneakerheads to create their online sneaker collection.  Users can add a new sneaker to their profile and view their entire collection.  User also has editing and deleting functionality on their sneaker collection.
+What's On Your Feet is a Sinatra Web Application that allows fellow Sneakerheads to create their online sneaker collection.  Users can add a new sneaker to their profile and view their entire collection.  Users also have editing and deleting functionality on their sneaker collection.
 
 Installation
 - Clone application from terminal
