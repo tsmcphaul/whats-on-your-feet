@@ -11,10 +11,10 @@ Specs:
 - [x] Ensure that users can't modify content created by other users - Users' unique profiles cannot be accessed without logging in.  
 - [ ] Include user input validations - User class validates_presence_of a username and password.  This requires both aattributes to be present and unique when creating a User instance.
 - [x] BONUS - not required - Display validation failures to user with error message (example form URL e.g. /posts/new) - If validations fail, a /failure route is triggered and failure.erb file displays error to user.
-- [ ] Your README.md includes a short description, install instructions, a contributors guide and a link to the license for your code
+- [x] Your README.md includes a short description, install instructions, a contributors guide and a link to the license for your code
 
 Confirm
-- [ ] You have a large number of small Git commits
-- [ ] Your commit messages are meaningful
-- [ ] You made the changes in a commit that relate to the commit message
-- [ ] You don't include changes in a commit that aren't related to the commit message
+- [x] You have a large number of small Git commits
+- [x] Your commit messages are meaningful
+- [x] You made the changes in a commit that relate to the commit message
+- [x] You don't include changes in a commit that aren't related to the commit message
