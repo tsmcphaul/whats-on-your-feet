@@ -9,7 +9,7 @@ Specs:
 - [x] Include user accounts with unique login attribute (username or email) - User will use a username and password to login.
 - [x] Ensure that the belongs_to resource has routes for Creating, Reading, Updating and Destroying - Sneakers Controller contains CRUD actions that allows users to create, read, update and destroy their objects.
 - [x] Ensure that users can't modify content created by other users - Users' unique profiles cannot be accessed without logging in.  
-- [ ] Include user input validations - User class validates_presence_of a username and password.  This requires both aattributes to be present and unique when creating a User instance.
+- [x] Include user input validations - User class validates_presence_of a username and password.  This requires both aattributes to be present and unique when creating a User instance.
 - [x] BONUS - not required - Display validation failures to user with error message (example form URL e.g. /posts/new) - If validations fail, a /failure route is triggered and failure.erb file displays error to user.
 - [x] Your README.md includes a short description, install instructions, a contributors guide and a link to the license for your code
 
