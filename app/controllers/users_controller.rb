@@ -1,14 +1,18 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
 
     get '/signup' do
         erb :'/user/signup'
     end
 
     post '/signup' do
-        @user = User.new(username: params[:username], password: params[:password])
-        @user.save
-        session[:user_id] = @user.id
-        redirect to '/login'
+        if params[:username]=="" || params[:password]==""
+            redirect to '/signup' 
+        else
+            @user = User.new(username: params[:username], password: params[:password])
+            @user.save
+            session[:user_id] = @user.id
+            redirect to '/login'
+        end
     end
 
     get '/login' do

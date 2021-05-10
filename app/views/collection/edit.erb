@@ -35,27 +35,31 @@
         <input id="hidden" type="hidden" name="_method" value="patch">
         <br>
         <label><b>Brand:</b></label>
-        <input type="text" id="brand" name="brand" placeholder="<%=@sneaker.brand%>" >
+        <input type="text" id="brand" name="brand" placeholder="<%=@sneaker.brand%>"required >
         <br>
         <br>
         <label><b>Name:</b></label>
-        <input type="text" id="name" name="name" placeholder="<%=@sneaker.name%>">
+        <input type="text" id="name" name="name" placeholder="<%=@sneaker.name%>"required>
         <br>
         <br>
         <label><b>Colorway:</b></label>
-        <input type="text" id="colorway" name="colorway" placeholder="<%=@sneaker.colorway%>">
+        <input type="text" id="colorway" name="colorway" placeholder="<%=@sneaker.colorway%>"required>
         <br>
         <br>
         <label><b>Purchase Date:</b></label>
-        <input type="text" id="purchase_date" name="purchase_date" placeholder="<%=@sneaker.purchase_date%>">
+        <input type="text" id="purchase_date" name="purchase_date" placeholder="<%=@sneaker.purchase_date%>"required>
         <br>
         <br>
         <label><b>Price: $</b></label>
-        <input type="text" id="price" name="price" placeholder="<%=@sneaker.price%>">
+        <input type="text" id="price" name="price" placeholder="<%=@sneaker.price%>"required>
        <br>
        <br>
         <input type="submit" name="submit" value="Update">
         <br>
+    </form>
+    <br>
+    <form action='/collection'>
+        <input type="submit" value="Go Back To Your Kicks">
     </form>
     </div>
     <br>

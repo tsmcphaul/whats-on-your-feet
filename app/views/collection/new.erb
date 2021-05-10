@@ -36,27 +36,31 @@
   <h1>Just copped a pair of fresh kicks?  Add them here!</h1>
 
   <label><b>Brand:</b></label>
-  <input type="text" id="brand" name="brand" placeholder="ex. Nike" >
+  <input type="text" id="brand" name="brand" placeholder="ex. Nike" required>
   <br>
   <br>
   <label><b>Name:</b></label>
-  <input type="text" id="name" name="name" placeholder="ex. Air Force 1">
+  <input type="text" id="name" name="name" placeholder="ex. Air Force 1" required>
   <br>
   <br>
   <label><b>Colorway:</b></label>
-  <input type="text" id="colorway" name="colorway" placeholder="ex. white/black/red">
+  <input type="text" id="colorway" name="colorway" placeholder="ex. white/black/red" required>
   <br>
   <br>
   <label><b>Purchase Date:</b></label>
-  <input type="text" id="purchase_date" name="purchase_date" placeholder="YYYY-MM-DD">
+  <input type="text" id="purchase_date" name="purchase_date" placeholder="YYYY-MM-DD" required>
   <br>
   <br>
   <label><b>Price: $</b></label>
-  <input type="text" id="price" name="price" placeholder="ex. 130.00">
+  <input type="text" id="price" name="price" placeholder="ex. 130.00"required>
   <br>
   <br>
 
 <input type="submit" name="submit" value="Add my kicks" id="submit" >
+</form>
+<br>
+<form action='/collection'>
+      <input type="submit" value="Go Back To Your Kicks">
 </form>
 </div>
 <br>

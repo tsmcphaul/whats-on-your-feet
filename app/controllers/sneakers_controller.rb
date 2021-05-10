@@ -1,9 +1,9 @@
-class SneakerController < ApplicationController
+class SneakersController < ApplicationController
 
    get '/collection' do
-      @user = User.find_by_id(session[:user_id])
-      @sneakers = current_user.sneaker
-      erb :'collection/collection'
+      @user = current_user
+      @sneakers = current_user.sneakers
+      erb :'collection/index'
   end
  
    get '/collection/new' do
